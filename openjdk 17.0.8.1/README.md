@@ -14,15 +14,15 @@
 
    `javac -version`
    
-   Output: `javac 17.0.8.1`
+   **Output:** `javac 17.0.8.1`
    
    
 4. To confirm the correct release of Java has been installed.
 
    `java -version`
    
-   Output: 
+   **Output:** 
    
-   `openjdk version "17.0.8.1" 2023-08-24`
-   `OpenJDK Runtime Environment (build 17.0.8.1+1-Ubuntu-0ubuntu122.04)`
-   `OpenJDK 64-Bit Server VM (build 17.0.8.1+1-Ubuntu-0ubuntu122.04, mixed mode, sharing)`
+   - `openjdk version "17.0.8.1" 2023-08-24`
+   - `OpenJDK Runtime Environment (build 17.0.8.1+1-Ubuntu-0ubuntu122.04)`
+   - `OpenJDK 64-Bit Server VM (build 17.0.8.1+1-Ubuntu-0ubuntu122.04, mixed mode, sharing)`
