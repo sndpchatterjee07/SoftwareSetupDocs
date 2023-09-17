@@ -40,8 +40,8 @@
    
    **Output:** 
    
-   `/usr/local/lib`
-   `-- express@4.18.2`
+   - `/usr/local/lib`
+   - `-- express@4.18.2`
 	   
 	  
 8. To install the Express Application Generator	   
