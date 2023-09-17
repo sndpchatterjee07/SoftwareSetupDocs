@@ -27,3 +27,23 @@
    `npm -v`
    
    **Output:** `8.5.1`
+   
+   
+6. To install Express globally
+
+   `sudo npm install -g express`
+   
+   
+7. To check the version of the installed npm package globally   
+
+   `npm list -g`
+   
+   **Output:** 
+   
+   `/usr/local/lib`
+   `-- express@4.18.2`
+	   
+	  
+8. To install the Express Application Generator	   
+
+   `sudo npm install express-generator -g`	
