@@ -16,8 +16,10 @@
    
    **Output:** 
    
-   - `Apache Maven 3.6.3`
-   - `Maven home: /usr/share/maven`
-   - `Java version: 17.0.8.1, vendor: Private Build, runtime: /usr/lib/jvm/java-17-openjdk-amd64`
-   - `Default locale: en_IN, platform encoding: UTF-8`
-   - `OS name: "linux", version: "6.2.0-32-generic", arch: "amd64", family: "unix"`
+   ```
+   Apache Maven 3.6.3
+   Maven home: /usr/share/maven
+   Java version: 17.0.8.1, vendor: Private Build, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+   Default locale: en_IN, platform encoding: UTF-8
+   OS name: "linux", version: "6.2.0-32-generic", arch: "amd64", family: "unix"
+    ```
