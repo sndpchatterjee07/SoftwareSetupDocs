@@ -122,14 +122,14 @@
    
 7. To set the root user to use the `mysql_native_password plugin`
    
-   ```
-   sudo mysql -u root
-   mysql> USE mysql;
-   mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-   mysql> FLUSH PRIVILEGES;
-   mysql> exit;
-   sudo service mysql restart
-   ```
+   
+     sudo mysql -u root
+     mysql> USE mysql;
+     mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+     mysql> FLUSH PRIVILEGES;
+     mysql> exit;
+     sudo service mysql restart
+
 
 
 8. Login to MySQL as `root`
@@ -151,3 +151,14 @@
    mysql> exit;
    sudo service mysql restart
    ```
+
+
+   **Example:**
+ 
+ ```
+  sudo mysql -u root; 
+  mysql> use mysql; 
+  mysql> select user, plugin from mysql.user; 
+  mysql> ALTER USER 'sandeep'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password'; 
+  mysql> flush privileges;	
+  ```
