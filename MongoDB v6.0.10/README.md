@@ -42,20 +42,20 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release
   
    ```
    db version v6.0.10
-Build Info: {
+   Build Info: {
     "version": "6.0.10",
     "gitVersion": "8e4b5670df9b9fe814e57cb5f3f8ee9407237b5a",
     "openSSLVersion": "OpenSSL 3.0.2 15 Mar 2022",
     "modules": [],
     "allocator": "tcmalloc",
     "environment": {
-        "distmod": "ubuntu2204",
-        "distarch": "x86_64",
-        "target_arch": "x86_64"
-    }
+    "distmod": "ubuntu2204",
+    "distarch": "x86_64",
+    "target_arch": "x86_64"
+  }
 }
 
-   ```
+```
   
 
 6. Start and enable MongoDB
@@ -87,62 +87,14 @@ Build Info: {
      CGroup: /system.slice/mongod.service
              └─24005 /usr/bin/mongod --config /etc/mongod.conf
 
-Sep 19 23:47:39 sandeep-Inspiron-3493 systemd[1]: Started MongoDB Database Server.
-```
+   Sep 19 23:47:39 sandeep-Inspiron-3493 systemd[1]: Started MongoDB Database Server.
+   ```
 
 
 8. Configure MongoDB
 
    MongoDB's configuration file may be found at `/etc/mongod.conf`. 
    The database path, logs directory, and any other necessary configurations can be made in this file. 
-
-   
-```
-# mongod.conf
-
-# for documentation of all options, see:
-#   http://docs.mongodb.org/manual/reference/configuration-options/
-
-# Where and how to store data.
-storage:
-  dbPath: /var/lib/mongodb
-#  engine:
-#  wiredTiger:
-
-# where to write logging data.
-systemLog:
-  destination: file
-  logAppend: true
-  path: /var/log/mongodb/mongod.log
-
-# network interfaces
-net:
-  port: 27017
-  bindIp: 127.0.0.1
-
-
-# how the process runs
-processManagement:
-  timeZoneInfo: /usr/share/zoneinfo
-
-#security:
-
-#operationProfiling:
-
-#replication:
-
-#sharding:
-
-## Enterprise-Only Options:
-
-#auditLog:
-
-#snmp:   
-       
-```
-
-
-
 
     
 
@@ -166,4 +118,4 @@ security:
 11. After making the above/necessary modifications mentioned in step 9 and 10, save the file, and then restart the service 
 
 		sudo systemctl restart mongod
-
+    
