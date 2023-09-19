@@ -5,7 +5,7 @@
 ### Pre-requisite Softwares
 
 
-1. We must verify that the following necessary software is correctly installed. 
+1. We must verify that the following necessary softwares are correctly installed. 
 
     - _nodejs v12.22.9_
     - _MySQL 8.0.34_
@@ -14,7 +14,7 @@
     
     
 
-2. Create a new `Node.js` project under the desired directory in this repository.
+2. Create a new `Node.js` project under the desired directory and run the following command.
 
  ```
  npm init
@@ -67,7 +67,7 @@ found 0 vulnerabilities
 ```
 
 
-4. `Node.js` Code to Connect to `MySQL` Database
+4. `Node.js` code to connect to `MySQL` database
 
 
 ```
