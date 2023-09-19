@@ -1,7 +1,6 @@
 # MongoDB v6.0.10 Installation Notes on Ubuntu 22.04
 
 
-
 1. To ensure the apt libraries are up-to-date & install the necessary packages:
 
     ```
@@ -9,30 +8,25 @@
      sudo apt install wget curl gnupg2 software-properties-common apt-transport-https ca-certificates lsb-release`
     ```
 
-
-
 2. Import the public GPG key for MongoDB    
 
-   ```
-   curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
-   ```
+   
+   	`curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg`
+   
+
 
 
 3. Add the repository
 
-  ```	
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-  ```
-  
-
-
-4. Install MongoDB 6.0 on Ubuntu 22.04 
+	```
+	echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+ 	```
+ 
+4. Install `MongoDB 6.0` on `Ubuntu 22.04`
   
    `sudo apt install mongodb-org`
    
-   
-   
-   
+    
 5. Verify MongoDB installed version
 
    `mongod -version`
@@ -41,21 +35,24 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release
    **Output:**
   
    ```
-   db version v6.0.10
-   Build Info: {
-    "version": "6.0.10",
-    "gitVersion": "8e4b5670df9b9fe814e57cb5f3f8ee9407237b5a",
-    "openSSLVersion": "OpenSSL 3.0.2 15 Mar 2022",
-    "modules": [],
-    "allocator": "tcmalloc",
-    "environment": {
-    "distmod": "ubuntu2204",
-    "distarch": "x86_64",
-    "target_arch": "x86_64"
-  }
-}
+	db version v6.0.10
+	Build Info: {
+	    "version": "6.0.10",
+	    "gitVersion": "8e4b5670df9b9fe814e57cb5f3f8ee9407237b5a",
+	    "openSSLVersion": "OpenSSL 3.0.2 15 Mar 2022",
+	    "modules": [],
+	    "allocator": "tcmalloc",
+	    "environment": {
+	    	"distmod": "ubuntu2204",
+		"distarch": "x86_64",
+		"target_arch": "x86_64"
+	      }
+	 }
 
-```
+   ```    
+
+
+
   
 
 6. Start and enable MongoDB
@@ -112,7 +109,7 @@ security:
 10. Set the following to bind to every IPv4 and IPv6 address
 
 
- 	bindIp: 0.0.0.0
+ 	`bindIp: 0.0.0.0`
  
  
 11. After making the above/necessary modifications mentioned in step 9 and 10, save the file, and then restart the service 
