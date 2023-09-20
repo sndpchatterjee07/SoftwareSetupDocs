@@ -10,10 +10,16 @@
    ![1](https://github.com/sndpchatterjee07/SoftwareSetupDocs/assets/3818950/afda3aa4-a58b-493d-b425-090235dddda1)
 
 
+
  
+- **Connect to a Cloud Deployment on [MongoDB Cloud](https://cloud.mongodb.com/)**
+
+   ![Screenshot from 2023-09-21 00-00-39](https://github.com/sndpchatterjee07/SoftwareSetupDocs/assets/3818950/c76f9481-ad99-4c0c-8c6f-fdb3a9c4b734)
 
 
+  ![Screenshot from 2023-09-21 00-03-27](https://github.com/sndpchatterjee07/SoftwareSetupDocs/assets/3818950/1cf83915-3740-4c15-8725-6c7753c84f20)
 
+   
 
 
 
