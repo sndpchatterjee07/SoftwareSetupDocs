@@ -14,6 +14,8 @@
  
 - **Connect to a Cloud Deployment on [MongoDB Cloud](https://cloud.mongodb.com/)**
 
+   `mongosh "mongodb+srv://my-default-cluster.nopctvg.mongodb.net/" --apiVersion 1 --username sandeepc`
+
    ![Screenshot from 2023-09-21 00-00-39](https://github.com/sndpchatterjee07/SoftwareSetupDocs/assets/3818950/c76f9481-ad99-4c0c-8c6f-fdb3a9c4b734)
 
 
