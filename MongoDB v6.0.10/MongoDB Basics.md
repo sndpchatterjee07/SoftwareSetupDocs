@@ -34,3 +34,4 @@
 **References**
 
 1. [MongoDB Docs](https://www.mongodb.com/docs/v6.0/tutorial/manage-users-and-roles/).
+2. [MongoDB Schema Design Best Practices](https://www.mongodb.com/developer/products/mongodb/mongodb-schema-design-best-practices/).
